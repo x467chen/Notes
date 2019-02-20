@@ -1,0 +1,102 @@
+Branch
+$git checkout -b <brach-name>
+$git add .
+$git commit -m “create a branch on the stack”
+$git push origin <brach-name>
+
+Compare and pull
+Create an pull request
+make comment: hey can you….
+Merge pull request
+delete branch?
+
+$git checkout master
+$git pull origin master
+$git checkout -b <new-branch-name>
+$git add.
+$git commit -t “create a update”
+$git push origin <new-brach-name>
+
+Fork
+git clone
+//change
+git push to my repo
+Create a pull request
+
+
+##Amend Commit name
+(Way 1)git commit --amend -m “update commit name”
+
+##Merge Multiple Commit
+git commit  --amend
+vim//can don’t do change
+
+##Commit to the wrong branch
+//first move the change to the brach you want
+git checkout 
+git cherry-pick master’s-Hash-code
+//Second clean your wrong committed branch
+git checkout master
+a.git reset --soft Hash-code-of-version-you-want (reverse to stage)
+b. git reset Hash-code-of-version-you-want(reverse in work directory)
+c. git reset-hard Hash-code-of-version-you-want(totally gone)
+d. git clean -df (-d:untracked directory, -f: untracked file)
+
+
+##checkHistory++##backup
+git relog
+git branch backup
+
+##reverse
+$git revert
+
+##stash—which can across branch!!
+//create stash
+$git stash  save “xxxx”
+//check stash
+$git stash list
+//apply stash
+a.$git stash apply
+b.git stash pop(apply and drop)
+//clean
+a.$git stash drop stash@{0}
+b.$git stash clear
+
+
+m1-m2-m3
+         |
+	m2-f1-f2
+
+#rebase vs merge
+//rebase
+go to branch
+$git rebase master
+m1-m2-m3
+         |
+	m2-m3-f1-f2
+
+go to master
+$git rebase branch
+m1-m2-m3-f1-f2
+         |
+	m2-m3-f1-f2
+
+//merge
+a.$ git merge feature
+m1-m2-m3
+         |               =>every thing in one line  m1-m2-f1-m3-f3
+	f1-f2-f3	
+b.$ git merge —squash branch name
+m1-m2-m3
+         |               =>all diff inon
+	f1-f2-f3	
+
+m1-m2-m3-x(new)
+         |
+	m2-f1-f2
+
+OTHERS:
+git brach
+git log
+Ignore
+graph
