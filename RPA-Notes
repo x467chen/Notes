@@ -1,0 +1,44 @@
+Robotic Process Automation (RPA) 
+Part 1: https://www.youtube.com/watch?v=n6nxTBB16ag
+1.When PRA
+Scenario1: Credit Card Fraud Detection System
+Rules:
+1.Last location
+2.Number of the amount
+3.Wrong pin
+transaction <-> workforce
+transaction ->Automated System<-> workforce
+
+Scenario:2 Data Entry
+merge files
+
+2.Why PRA
+Save money in workforce by automation.
+More accurate in lesser time
+
+
+3.What’ RPA
+R: An entity can mimic human
+P: A sequence of process
+A: Automatically
+
+4.RPA Tools
+blue prism
+Automation anywhere
+UiPath
+
+5.Implement
+UiPath- 4 Components(Recording, Scraping, User Events, Variables)
+Task: Extra data
+
+SMTP管‘发’， POP3/IMAP管‘收’
+POP3是Post Office Protocol 3的简称
+IMAP全称是Internet Mail Access Protocol，即交互式邮件存取协议
+SMTP 的全称是“Simple Mail Transfer Protocol”，即简单邮件传输协议
+
+Part2:Furture of RPA
+
+
+
+
+
